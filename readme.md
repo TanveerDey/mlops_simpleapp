@@ -40,3 +40,10 @@ dvc add data_given/winequality.csv
 git add .
 git commit -m "first commit"
 ```
+
+Push changes to new repo
+```
+git remote add origin https://github.com/TanveerDey/mlops_simpleapp.git
+git branch -M main
+git push -u origin main
+```
