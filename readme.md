@@ -31,3 +31,12 @@ python template.py
 ```
 copy winequality.csv to data_given folder
 ```
+
+```
+initialise git and dvc
+git init
+dvc init
+dvc add data_given/winequality.csv
+git add .
+git commit -m "first commit"
+```
