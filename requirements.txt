@@ -1,5 +1,5 @@
 # install inhouse local packages
-
+-e .
 # libraries
 dvc
 dvc[gdrive]
