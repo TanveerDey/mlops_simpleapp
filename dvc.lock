@@ -72,3 +72,14 @@ stages:
       hash: md5
       md5: f8f5dab6c042a9933571db5a1ee57112
       size: 1263
+  call_microservice:
+    cmd: python src/call_microservice.py --config=params.yaml
+    deps:
+    - path: data/payload/payload.json
+      hash: md5
+      md5: 26f4e0a4ae47692642a2a8ff8a182565
+      size: 261
+    - path: src/call_microservice.py
+      hash: md5
+      md5: 4345faa32a06b1019ebae49c40b8eb94
+      size: 629

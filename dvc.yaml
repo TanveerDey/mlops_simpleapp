@@ -33,3 +33,9 @@ stages :
           cache : false
     outs :
       - saved_models/model.joblib
+
+  call_microservice :
+    cmd : python src/call_microservice.py --config=params.yaml
+    deps:
+      - src/call_microservice.py
+      - data/payload/payload.json
